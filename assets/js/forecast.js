@@ -14,7 +14,7 @@ console.log(localForecast);
 const forecastList = localForecast.list;
 const localCity = localForecast.city.name;
  
-//basic layout, prob wouldve been easier to put this into html 
+//basic layout, doing it this way made it a pain to do anything to the actual forcast layout in the function below
 let card = ` 
   <h2>${localCity} 5-Day Forecast</h2>
   <table >
@@ -56,7 +56,7 @@ function forecastCard(){ //displays the response
 
 
         `; //this displays the output, i dont have the energy to make it pretty, and have too much s**t to do this week to try and fix it
-    }
+    } //i imagine a easy way to fix this is to remove the "card" var above and just implament the ${localCity} here, and have the rest in the HTML file
 };
 
 let historyCard =`
